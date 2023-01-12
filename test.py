@@ -11,9 +11,11 @@ def convert_df(raw_data):
     return raw_data.to_csv(index=False).encode('utf-8')
 
 st.title("File Merger App")
-st.write("Merge Two CSV files using Python")
+st.write("Merge Multiple CSV files using Python")
 
 st.header("Import your File")
+st.write("Data from first file uploaded will be first, followed by the next file chosen")
+st.write("Drop all at once or one by one (If it follows sequence)")
 
 uploaded_files = st.file_uploader("Upload CSV", type="csv", accept_multiple_files=True)
 if st.button('Merge'):
