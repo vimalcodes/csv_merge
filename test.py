@@ -24,5 +24,5 @@ if st.button('Merge'):
 
     csv = convert_df(raw_data)
 
-    st.download_button(label="Download data as CSV", data=csv, file_name='sample_df.csv', mime='text/csv')
+    st.download_button(label="Download data as CSV", data=csv, file_name='mergefile.csv', mime='text/csv')
 
